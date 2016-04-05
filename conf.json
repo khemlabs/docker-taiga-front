@@ -1,0 +1,11 @@
+{
+    "api": "https://api.taiga.khemlabs.com/api/v1/",
+    "eventsUrl": "",
+    "debug": "true",
+    "publicRegisterEnabled": true,
+    "feedbackEnabled": true,
+    "privacyPolicyUrl": null,
+    "termsOfServiceUrl": null,
+    "maxUploadFileSize": null,
+    "contribPlugins": []
+}

@@ -1,0 +1,19 @@
+#!/bin/bash
+
+PUBLIC_REGISTER_ENABLED=${PUBLIC_REGISTER_ENABLED:-true}
+API=${API:-/api/v1/}
+EVENTS=${EVENTS:-null}
+
+cat > /usr/local/taiga/taiga-front-dist/dist/js/conf.json <<EOL
+{
+  "api": "${API}",
+  "eventsUrl": ${EVENTS},
+  "debug": false,
+  "publicRegisterEnabled": ${PUBLIC_REGISTER_ENABLED},
+  "feedbackEnabled": true,
+  "privacyPolicyUrl": null,
+  "termsOfServiceUrl": null,
+  "maxUploadFileSize": null,
+  "gitHubClientId": null,
+  "contribPlugins": [ ]
+}
